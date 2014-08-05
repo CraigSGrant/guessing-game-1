@@ -1,28 +1,30 @@
 <script>
-var age = '18';
-for (i = 2; i >= 0; i --) {
-	var guess = prompt('What is my age?');
-	var difference = guess - age;
-	var wrongAnswer = 'You have ' + i + ' guesses left.';
-  if (guess === age){
-        i = 0;
-		outputMessage = ('Good guess! You\'re right!');
+	var age = '18';
+
+	for (i = 2; i >= 0; i --) {
+		var guess = prompt('What is my age?');
+		var difference = guess - age;
+		var wrongAnswer = 'You have ' + i + ' guesses left.';
+  	if (guess === age){
+      i = 0;
+			outputMessage = ('Good guess! You\'re right!');
+			}
+		else if(guess === 21){
+			outputMessage('I wish, but alas... ' + wrongAnswer);
+			}
+		else if(guess < 10){
+			outputMessage = ('Never again. ' + wrongAnswer);
+			}
+		else if(guess > 50){
+			outputMessage = ('You\'re only ' + difference + 'years off. Keep trying! ' + wrongAnswer);
+			}
+	  else if(guess > 30){
+			outputMessage = ('Not a chance. You are still  ' + difference + 'years off. Keep trying! ' + wrongAnswer);
+			}
+		else {
+			outputMessage = ('Try again! ' + wrongAnswer);
 		}
-	else if(guess === 21){
-		outputMessage('I wish, but alas... ' + wrongAnswer);
-		}
-	else if(guess < 10){
-		outputMessage = ('Never again. ' + wrongAnswer);
-		}
-	else if(guess > 50){
-		outputMessage = ('You\'re only ' + difference + 'years off. Keep trying! ' + wrongAnswer);
-		}
-    else if(guess > 30){
-		outputMessage = ('Not a chance. You are still  ' + difference + 'years off. Keep trying! ' + wrongAnswer);
-		}
-	else {
-		outputMessage = ('Try again! ' + wrongAnswer);
-	}
+
 	alert(outputMessage);
-}
+	}
 </script>
