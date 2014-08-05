@@ -1,11 +1,10 @@
-# Guessing Game
+# Rebuild a website
 ---
-Guesser attempts to guess age.
+Took a look at flickr and took what I thought were the main point they are trying to communicate
 
-Guesser gets three guesses.
+Built html to reflect importance of each piece of info.
 
-Different output for different levels of ages.
 
-Output changes at 21 years old, under 10, over 50, over 30.
 
-Code will compare guessers guess to actual age.
+
+
